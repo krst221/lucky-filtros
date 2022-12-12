@@ -1,0 +1,29 @@
+@import './../../scss/colors.scss';
+.p-main-container{
+    display: flex;
+    flex-direction: column;
+    height: 92vh;
+    width: 100vw;
+}
+.p-main-holder {
+    display: flex;
+    flex-direction: column;
+    height: 92vh;
+    width: 100vw;
+}
+.p-main-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-end;
+    height: 30vh;
+    width: 100vw;
+    &__items img {
+        width: 100vw;
+        max-width: 400px;
+    }  
+}
+.p-main-line {
+ border-bottom: 1px solid $cloudyblue-color;
+ width: 80vw;    
+}

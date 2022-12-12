@@ -1,0 +1,86 @@
+@import './../../scss/colors.scss';
+
+.c-data-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 100vw;
+    color: black;
+}
+.c-data-holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 100vw;
+}
+.c-data-patita {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    height: 40px;
+    max-width: 400px;
+    &__img span {
+        font-size: 14px;
+        margin-left: 30px;
+    }
+    &__img {
+        width: 24px;
+        height: 24px;
+        background-image: url(./../../../public/assets/icons/zarpa.png);
+        background-repeat: no-repeat;
+        background-size: 100% ;
+    }
+    & p {
+        font-size: 14px;
+    }
+}
+.c-data-box {
+    width: 80vw;
+    height: 90px;
+    max-width: 400px;
+    padding: 20px;
+    margin: 10px;
+    & h6 {
+        font-size: 16px;
+        color: $ocean-color;
+        font-weight: 600;
+    }
+    & p {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+        background-color: $ocean-color;
+        padding: 0px 10px;
+        border-radius: 15px;
+        max-width: 120px;
+        color: $white-color;
+
+    }
+}
+.c-data-box2 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80vw;
+    height: 90px;
+    max-width: 400px;
+    border: 2px solid $cloudyblue-color;
+    border-radius: 5px;
+    padding: 10px 10px 10px 20px;
+    margin: 10px;
+    & h6 {
+        font-size: 16px;
+        color: $ocean-color;
+        font-weight: 600;
+    }
+    & p {
+        font-size: 14px;
+        font-weight: 600;
+
+    }
+}

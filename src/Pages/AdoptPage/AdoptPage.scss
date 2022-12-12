@@ -1,0 +1,515 @@
+@import './../../scss/colors.scss';
+
+.p-adopt-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    color: black;
+}
+.p-adopt-holder{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+.p-adopt-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    height: 26vh;
+    margin-top: 10vh;
+    &__filter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 80vw;
+        margin-top: 10px;
+    }
+    & h6 {
+        color: $ocean-color;
+    }
+}
+.p-button-filter {
+    background-color: transparent;
+    background-image: url(./../../../public/assets/icons/filter.png);
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+}
+.p-adopt-gallery {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: black;
+    }
+.c-adopt-gallery-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 334px;
+    height: 250px;
+    margin: 20px;
+    border: 2px solid $cloudyblue-color;
+    border-radius: 5px;
+    &__img {
+        width: 330px;
+        height: 210px;   
+    }
+    &__img  img{
+        overflow: hidden;
+        object-fit: cover;
+        width: 330px;
+        height: 210px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    &__text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: black;
+        padding: 0 10px 0 10px;
+    }
+    &__text h4 {
+        font-size: 22px;
+        color: $ocean-color;
+        font-family: 'Gilroy Bold';
+        font-weight: 900;
+        opacity: 80%;
+    }
+    &__text h6 {
+        font-size: 12px;
+        color: $black-color;
+        font-weight: 600;
+        padding: 10px;
+    }
+    & button {
+        background-color: transparent;
+        position: relative;
+        right: -290px;
+        top: -470px;
+    }
+    & button img {
+        width: 24px;
+    }
+
+}   
+    .c-adopt-gallery-holder{
+        width: 100vw;
+        height: 46vh;
+        &__box {
+            margin: 20px;
+        }
+      }
+.p-adopt-pets {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    & a {
+        font-size: 16px;
+        font-weight: 600;
+        color: $ocean-color;
+    }
+    & a img{
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+    }
+    & p {
+        font-size: 12px;
+    }
+}
+.p-adopt-filter-close button {
+    background-color: transparent;
+}
+.p-adopt-filter-container {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; 
+}
+
+
+.p-adopt-filter-holder {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 400px;
+    align-items: center;
+    justify-content: center;
+}
+.p-adopt-filter-button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    max-width: 400px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    & button {
+        width: 75px;
+        height: 70px;
+        font-size: 10px;
+        background-color: transparent;
+        border-radius: 5px;
+        margin: 10px;
+        padding-top: 40px;
+        line-height: 12px;
+    }
+    &__dog {
+        background-image: url(./../../../public/assets/icons/perrop.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position-y: 12px;
+        color: $ocean-color;
+        border: 2px solid $cloudyblue-color;
+    }  
+    &__cat {
+        background-image: url(./../../../public/assets/icons/cat.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 35%;
+        background-position-y: 12px;
+        color: $ocean-color;
+        border: 2px solid $cloudyblue-color;
+    }
+    &__rabbit {
+        background-image: url(./../../../public/assets/icons/rabbit.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25%;
+        background-position-y: 12px;
+        color: $ocean-color;
+        border: 2px solid $cloudyblue-color;
+    }
+    &__hamster {
+        background-image: url(./../../../public/assets/icons/hamster.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 45%;
+        background-position-y: 20px;
+        color: $ocean-color;
+        border: 2px solid $cloudyblue-color;
+    }
+    &__coati {
+        background-image: url(./../../../public/assets/icons/coati.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 45%;
+        background-position-y: 12px;
+        color: $ocean-color;
+        border: 2px solid $cloudyblue-color;
+    }
+    &__ferret {
+        background-image: url(./../../../public/assets/icons/ferret.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 45%;
+        background-position-y: 15px;
+        color: $ocean-color;
+        border: 2px solid $cloudyblue-color;
+    }
+    &__fish {
+        background-image: url(./../../../public/assets/icons/fish.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 45%;
+        background-position-y: 19px;
+        color: $ocean-color;
+        border: 2px solid $cloudyblue-color;
+    }
+    &__snake {
+        background-image: url(./../../../public/assets/icons/snake.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position-y: 15px;
+        color: $ocean-color;
+        border: 2px solid $cloudyblue-color;
+    }
+    &__frog {
+        background-image: url(./../../../public/assets/icons/frog.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position-y: 20px;
+        color: $ocean-color;
+        border: 2px solid $cloudyblue-color;
+    }
+    &__spider {
+        background-image: url(./../../../public/assets/icons/spider.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position-y: 12px;
+        color: $ocean-color;
+        border: 2px solid $cloudyblue-color;
+    }
+    &__bird {
+        background-image: url(./../../../public/assets/icons/bird.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position-y: 12px;
+        color: $ocean-color;
+        border: 2px solid $cloudyblue-color;
+    }
+    &-sex {
+        margin-top: 40px;
+    }
+    &-sex__boy {
+        background-image: url(./../../../public/assets/icons/male.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position-y: 12px;
+        color: $ocean-color;
+        border: 2px solid $cloudyblue-color;
+    }
+    &-sex__girl {
+        background-image: url(./../../../public/assets/icons/female.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 35%;
+        background-position-y: 12px;
+        color: $ocean-color;
+        border: 2px solid $cloudyblue-color;
+    }
+    
+    &-size {
+        margin-top: 40px;
+    }
+    &-size__small {
+        background-image: url(./../../../public/assets/icons/dog.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25%;
+        background-position-y: 20px;
+        color: $ocean-color;
+        border: 2px solid $cloudyblue-color;
+    }
+    &-size__mid {
+        background-image: url(./../../../public/assets/icons/dog.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 35%;
+        background-position-y: 16px;
+        color: $ocean-color;
+        border: 2px solid $cloudyblue-color;
+    }
+    &-size__big {
+        background-image: url(./../../../public/assets/icons/dog.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 45%;
+        background-position-y: 12px;
+        color: $ocean-color;
+        border: 2px solid $cloudyblue-color;
+    }
+    &__apply {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    
+}
+.p-adopt-filter-button__dog:hover,
+.p-adopt-filter-button__dog__s
+ {
+    background-image: url(./../../../public/assets/icons/perrop-red.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position-y: 12px;
+    border: 2px solid $toamto-color;
+    color: $toamto-color;
+    opacity: 90%;
+}
+.p-adopt-filter-button__cat:hover,
+.p-adopt-filter-button__cat__s {
+    background-image: url(./../../../public/assets/icons/cat-red.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position-y: 12px;
+    border: 2px solid $toamto-color;
+    color: $toamto-color;
+    opacity: 90%;
+}
+.p-adopt-filter-button__rabbit:hover,
+.p-adopt-filter-button__rabbit__s {
+    background-image: url(./../../../public/assets/icons/rabbit-red.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position-y: 12px;
+    border: 2px solid $toamto-color;
+    color: $toamto-color;
+    opacity: 90%;
+}
+.p-adopt-filter-button__hamster:hover,
+.p-adopt-filter-button__hamster__s {
+    background-image: url(./../../../public/assets/icons/hamster-red.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position-y: 20px;
+    border: 2px solid $toamto-color;
+    color: $toamto-color;
+    opacity: 90%;
+}
+.p-adopt-filter-button__coati:hover,
+.p-adopt-filter-button__coati__s {
+    background-image: url(./../../../public/assets/icons/coati-red.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position-y: 12px;
+    border: 2px solid $toamto-color;
+    color: $toamto-color;
+    opacity: 90%;
+}
+.p-adopt-filter-button__ferret:hover,
+.p-adopt-filter-button__ferret__s {
+    background-image: url(./../../../public/assets/icons/ferret-red.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position-y: 15px;
+    border: 2px solid $toamto-color;
+    color: $toamto-color;
+    opacity: 90%;
+}
+.p-adopt-filter-button__fish:hover,
+.p-adopt-filter-button__fish__s {
+    background-image: url(./../../../public/assets/icons/fish-red.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position-y: 19px;
+    border: 2px solid $toamto-color;
+    color: $toamto-color;
+    opacity: 90%;
+}
+.p-adopt-filter-button__snake:hover,
+.p-adopt-filter-button__snake__s {
+    background-image: url(./../../../public/assets/icons/snake-red.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position-y: 15px;
+    border: 2px solid $toamto-color;
+    color: $toamto-color;
+    opacity: 90%;
+}
+.p-adopt-filter-button__frog:hover,
+.p-adopt-filter-button__frog__s {
+    background-image: url(./../../../public/assets/icons/frog-red.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position-y: 20px;
+    border: 2px solid $toamto-color;
+    color: $toamto-color;
+    opacity: 90%;
+}
+.p-adopt-filter-button__spider:hover,
+.p-adopt-filter-button__spider__s {
+    background-image: url(./../../../public/assets/icons/spider-red.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position-y: 12px;
+    border: 2px solid $toamto-color;
+    color: $toamto-color;
+    opacity: 90%;
+}
+.p-adopt-filter-button__bird:hover,
+.p-adopt-filter-button__bird__s {
+    background-image: url(./../../../public/assets/icons/bird-red.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position-y: 12px;
+    border: 2px solid $toamto-color;
+    color: $toamto-color;
+    opacity: 90%;
+}
+.p-adopt-filter-button-sex__boy:hover,
+.p-adopt-filter-button-sex__boy__s {
+    background-image: url(./../../../public/assets/icons/male-red.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position-y: 12px;
+    border: 2px solid $toamto-color;
+    color: $toamto-color;
+    opacity: 90%;
+}
+.p-adopt-filter-button-sex__girl:hover,
+.p-adopt-filter-button-sex__girl__s {
+    background-image: url(./../../../public/assets/icons/female-red.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position-y: 12px;
+    border: 2px solid $toamto-color;
+    color: $toamto-color;
+    opacity: 90%;
+}
+.p-adopt-filter-button-size__small:hover,
+.p-adopt-filter-button-size__small__s {
+    background-image: url(./../../../public/assets/icons/dog-red.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position-y: 20px;
+    border: 2px solid $toamto-color;
+    color: $toamto-color;
+    opacity: 90%;
+}
+.p-adopt-filter-button-size__mid:hover,
+.p-adopt-filter-button-size__mid__s {
+    background-image: url(./../../../public/assets/icons/dog-red.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position-y: 16px;
+    border: 2px solid $toamto-color;
+    color: $toamto-color;
+    opacity: 90%;
+}
+.p-adopt-filter-button-size__big:hover,
+.p-adopt-filter-button-size__big__s {
+    background-image: url(./../../../public/assets/icons/dog-red.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position-y: 12px;
+    border: 2px solid $toamto-color;
+    color: $toamto-color;
+    opacity: 90%;
+}
+
+.p-adopt-filter-button__apply button {
+    width: 306px;
+    height: 35px;
+    color: $white-color;
+    background-color: $toamto-color;
+    border: 2px solid $toamto-color;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    margin: 10px;
+    opacity: 90%;
+}

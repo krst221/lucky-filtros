@@ -1,0 +1,44 @@
+.o-c-container {
+  display: flex;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px !important;
+  height: 10px !important;
+  background-color: rgb(250, 156, 147) !important;
+  border-radius: 50% !important;
+  margin: 5px;
+}
+
+.d-block {
+  height: 156px;
+  width: 238px;
+}
+
+.carousel-item h1 {
+  color: rgb(1, 116, 142) !important;
+  height: 90px;
+  width: 256px;
+  font-family: Barlow-Medium;
+  font-size: 25px;
+}
+.carousel-item p {
+  color: rgb(45, 45, 45) !important;
+  font-family: Barlow-Regular;
+  font-size: 16px;
+}
+
+.carousel-caption {
+  color: rgb(1, 116, 142) !important;
+}/*# sourceMappingURL=OnboardingPage.css.map */

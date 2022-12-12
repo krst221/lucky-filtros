@@ -1,0 +1,101 @@
+@import './../src/scss/colors.scss';
+@import './scss/fonts.scss';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;900&display=swap');
+
+*,
+*::before,
+*::after {
+  
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+html,
+body {
+    font-family: 'Noto Sans', 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    color:rgba(18, 19, 22, 1);
+    background-color: $white-color; 
+    box-sizing: border-box;
+    font-style: normal;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+a,
+a:link,
+a:visited {
+  text-decoration:none;
+  color: white;
+  cursor: pointer;
+}
+input {
+  outline: 0;
+  border-width: 0 0 2px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+}
+input:hover,
+input:focus {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 1);
+}
+ul,li {
+  list-style-type:none;
+}
+ul{
+  list-style:none;
+  padding-left:  0 !important;
+}
+li{
+
+  text-align:center;
+}
+Link:link,
+Link:visited {
+  text-decoration:none;
+}
+
+.c-input-wrapper p {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.c-input {
+  font-size: 16px;
+  color: $pinegreen-color;
+  box-sizing: border-box;
+  padding: 10px 15px 10px 35px;
+  width: 100%;
+  cursor: pointer;
+  border-bottom: 2px solid $ocean-color;
+  opacity: 60%;
+  &:hover,
+  &:focus {
+  color: $pinegreen-color;
+  border-bottom: 2px solid $ocean-color;
+  opacity: 60%;
+  }
+}  
+.c-input-icon {
+  color: $ocean-color;
+  width: 25px;
+  height: 25px;
+  left: 5px;
+  top: 45%;
+  transform: translateY(150%);
+  margin-left: 10px;
+}

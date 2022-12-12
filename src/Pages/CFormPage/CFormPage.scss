@@ -1,0 +1,77 @@
+@import './../../scss/colors.scss';
+.p-cform-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.p-cform-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    max-width: 400px;
+    h2{
+        margin-top: 40px;
+        font-size: 20px;
+        color: $ocean-color;
+    }
+    h3{
+        font-size: 15px;
+        width: 80vw;
+        margin-top: 10px;
+        color: $ocean-color;
+        
+    }
+    input{
+        width: 80vw;
+        border-bottom: solid;
+        color: $cloudyblue-color; 
+        font-size: 15px;
+    }
+   
+    }
+    .p-cform-checks {
+        width: 350vw;
+        max-width: 350px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        &__title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        } 
+        &__title p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        } 
+        &__check {
+            display: flex;
+            flex-direction: row;
+        } 
+    
+        &__check span {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            line-height: 5px;
+        } 
+        &__check input {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+        } 
+    }
+    
+    

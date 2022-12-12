@@ -1,0 +1,33 @@
+@import './../../scss/colors.scss';
+
+.c-search-container {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .c-search-holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 25px;
+    width: 80%;
+    max-width: 300px;
+    margin-top: 40px;
+    border: 1px solid $gray-color;
+    border-radius: 12px;
+  }
+  .searchTerm {
+    color: $greyish-color;
+    font-size: 14px;
+  }
+  .searchTerm:focus{
+    color: $pinegreen-color;
+    
+  }
+  .c-search-holder i {
+    font-size: 15px;
+    color: $toamto-color;
+    opacity: 60%;
+  }

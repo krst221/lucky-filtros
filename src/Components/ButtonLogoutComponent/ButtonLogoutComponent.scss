@@ -1,0 +1,27 @@
+@import './../../scss/colors.scss';
+
+.c-button-users {
+    height: 50px;
+    width: 80vw;
+    background-color:white;
+    color:rgb(1 ,116, 142) ;
+    size: 16px;
+    border:solid;
+    border: 2px solid $cloudyblue-color;
+    border-radius: 5px;
+    img{
+        width: 24px;
+        height: 24px;
+        
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    i{
+        color:rgb(250, 156, 147);
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+}

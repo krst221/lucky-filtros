@@ -1,0 +1,53 @@
+.c-container-gallery {
+    width: 100%;
+    height: 64vh;
+    justify-content: center;
+    margin-bottom: 10px;
+    }
+    .simplebar-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+      }
+    
+    .simplebar-scrollbar::before {
+        background: rgb(2,0,36);
+        background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(32,32,34,1) 53%, rgba(40,45,46,1) 100%);
+        height: 100px;
+      }
+      .c-gallery-holder{
+        width: 99%;
+        height:60vh;
+        
+      }
+      .c-gallery-holder__holder {
+        margin: 20px;
+        
+      }
+    .container-art{
+        border-color:rgb( 250,156,147) ;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin-bottom: 32px;
+        border-bottom-left-radius:10px  ;
+        border-bottom-right-radius:10px;
+        p{
+            font-size: 16px;
+            color: white;
+            background-color:rgb( 250,156,147) ;
+            height: 34px;
+            text-align: center;
+            border-bottom-left-radius:10px  ;
+            border-bottom-right-radius:10px;
+            }
+         img{
+            width: 350px;
+            height: 253px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+         }  
+     }
+
+     
